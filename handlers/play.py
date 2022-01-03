@@ -120,9 +120,9 @@ async def playlist(client, message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("༎⃝🌺𝐆𝐑𝐎𝐔𝐏༎⃝➤", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "༎⃝🥀𝐂𝐇𝐀𝐍𝐍𝐄𝐋༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]

@@ -183,9 +183,9 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("📖 PLAY-LIST", "playlist"),
+                InlineKeyboardButton("༎⃝🌺𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓༎⃝➤", "playlist"),
             ],
-            [InlineKeyboardButton("🗑 Close", "cls")],
+            [InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", "cls")],
         ]
     )
     return mar
@@ -262,12 +262,12 @@ async def p_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("༎⃝🌺𝐆𝐑𝐎𝐔𝐏༎⃝➤", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "༎⃝🥀𝐂𝐇𝐀𝐍𝐍𝐄𝐋༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ],
-            [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
+            [InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="menu")],
         ]
     )
 
@@ -310,12 +310,12 @@ async def m_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("༎⃝🌺𝐆𝐑𝐎𝐔𝐏༎⃝➤", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "༎⃝🥀𝐂𝐇𝐀𝐍𝐍𝐄𝐋༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ],
-            [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
+            [InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="menu")],
         ]
     )
 
@@ -424,9 +424,9 @@ async def m_cb(b, cb):
                     InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("📖 PLAY-LIST", "playlist"),
+                    InlineKeyboardButton("༎⃝🌺𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓༎⃝➤", "playlist"),
                 ],
-                [InlineKeyboardButton("🗑 Close", "cls")],
+                [InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -451,7 +451,7 @@ async def m_cb(b, cb):
                 await cb.message.edit(
                     nmq,
                     reply_markup=InlineKeyboardMarkup(
-                        [[InlineKeyboardButton("🗑 Close", callback_data="close")]]
+                        [[InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="close")]]
                     ),
                 )
             else:
@@ -478,7 +478,7 @@ async def m_cb(b, cb):
             await cb.message.edit(
                 hps,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("🗑 Close", callback_data="close")]]
+                    [[InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="close")]]
                 ),
             )
         else:
@@ -604,7 +604,7 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("༎⃝✨𝐌𝐄𝐍𝐔༎⃝➤", callback_data="menu"),
                 InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="cls"),
             ],
-            [InlineKeyboardButton("༎⃝🥀𝐔𝐏𝐃𝐀𝐓𝐄𝐒༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("༎⃝🥀𝐂𝐇𝐀𝐍𝐍𝐄𝐋༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}")],
         ]
     )
     await generate_cover(title, thumbnail, ctitle)

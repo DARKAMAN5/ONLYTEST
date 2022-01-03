@@ -120,9 +120,9 @@ async def playlist(client, message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("༎⃝🌺𝐒𝐔𝐏𝐏𝐎𝐑𝐓༎⃝➤", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "༎⃝🥀𝐔𝐏𝐃𝐀𝐓𝐄𝐒༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -183,9 +183,9 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("༎⃝✨𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓༎⃝➤", "playlist"),
+                InlineKeyboardButton("📖 PLAY-LIST", "playlist"),
             ],
-            [InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", "cls")],
+            [InlineKeyboardButton("🗑 Close", "cls")],
         ]
     )
     return mar
@@ -262,12 +262,12 @@ async def p_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("༎⃝🌺𝐒𝐔𝐏𝐏𝐎𝐑𝐓༎⃝➤", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "༎⃝🥀𝐔𝐏𝐃𝐀𝐓𝐄𝐒༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ],
-            [InlineKeyboardButton("༎⃝💖𝐁𝐀𝐂𝐊༎⃝➤", callback_data="menu")],
+            [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
         ]
     )
 
@@ -310,12 +310,12 @@ async def m_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("༎⃝🌺𝐒𝐔𝐏𝐏𝐎𝐑𝐓༎⃝➤", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "༎⃝🥀𝐔𝐏𝐃𝐀𝐓𝐄𝐒༎⃝➤", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ],
-            [InlineKeyboardButton("༎⃝💖𝐁𝐀𝐂𝐊༎⃝➤", callback_data="menu")],
+            [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
         ]
     )
 
@@ -424,9 +424,9 @@ async def m_cb(b, cb):
                     InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("༎⃝✨𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓༎⃝➤", "playlist"),
+                    InlineKeyboardButton("📖 PLAY-LIST", "playlist"),
                 ],
-                [InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", "cls")],
+                [InlineKeyboardButton("🗑 Close", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -451,7 +451,7 @@ async def m_cb(b, cb):
                 await cb.message.edit(
                     nmq,
                     reply_markup=InlineKeyboardMarkup(
-                        [[InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="close")]]
+                        [[InlineKeyboardButton("🗑 Close", callback_data="close")]]
                     ),
                 )
             else:
@@ -478,13 +478,17 @@ async def m_cb(b, cb):
             await cb.message.edit(
                 hps,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("༎⃝💔𝐂𝐋𝐎𝐒𝐄༎⃝➤", callback_data="close")]]
+                    [[InlineKeyboardButton("🗑 Close", callback_data="close")]]
                 ),
             )
         else:
             await cb.answer(
                 "userbot is not connected to voice chat.", show_alert=True
             )
+
+
+
+
 @Client.on_message(command(["play", f"play@{BOT_USERNAME}"]) & other_filters)
 async def ytplay(_, message: Message):
     

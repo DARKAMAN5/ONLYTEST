@@ -1,3 +1,7 @@
+from config import (
+    BOT_USERNAME,
+    que,
+)
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.decorators import authorized_users_only
@@ -8,6 +12,7 @@ from callsmusic.callsmusic import client as USER
 
 @Client.on_message(command(["join", f"join@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
+@sudo_users_only
 async def join(client, message):
     chat_id = message.chat.id
     try:

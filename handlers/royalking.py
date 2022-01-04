@@ -1,4 +1,12 @@
-@Client.on_message(filters.command(["join"], prefixes=f"{HNDLR}"))
+from pyrogram import Client, filters
+from pyrogram.errors import UserAlreadyParticipant
+from helpers.decorators import authorized_users_only
+from helpers.filters import command, other_filters
+from helpers.chattitle import CHAT_TITLE
+from callsmusic.callsmusic import client as USER
+
+
+@Client.on_message(command(["join", f"join@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
 async def join(client, message):
     chat_id = message.chat.id

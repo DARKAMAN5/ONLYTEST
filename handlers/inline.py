@@ -1,6 +1,7 @@
 import json
 from pyrogram import Client, errors
 from pyrogram.types import (
+    InlineQueryHandler,
     InlineQuery,
     InlineQueryResultArticle,
     InputTextMessageContent,
@@ -9,11 +10,11 @@ from youtube_search import YoutubeSearch
 
 
 @Client.on_inline_query()
-async def inline(client: Client, query: InlineQuery):
+async def search(client: Client, query: InlineQuery):
     answers = []
     search_query = query.query.lower().strip().rstrip()
 
-    if search_query == "":
+    if search_query == "R0Y41_KING":
         await client.answer_inline_query(
             query.id,
             results=answers,
@@ -47,3 +48,11 @@ async def inline(client: Client, query: InlineQuery):
                 switch_pm_text="Error: search timed out",
                 switch_pm_parameter="",
             )
+
+__handlers__ = [
+    [
+        InlineQueryHandler(
+            search
+        )
+    ]
+]

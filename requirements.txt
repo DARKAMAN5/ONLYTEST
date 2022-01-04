@@ -1,4 +1,4 @@
-git+https://github.com/pyrogram/pyrogram@master
+git+https://github.com/AsmSafone/pyrogram@master
 tgcrypto
 youtube-search
 git+https://github.com/yt-dlp/yt-dlp@master

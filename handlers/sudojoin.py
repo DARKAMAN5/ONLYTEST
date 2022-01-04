@@ -3,6 +3,7 @@ from config import (
     que,
 )
 from pyrogram import Client, filters
+from helpers.decorators import sudo_users_only
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.decorators import authorized_users_only
 from helpers.filters import command, other_filters

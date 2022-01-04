@@ -1,7 +1,6 @@
 import json
 from pyrogram import Client, errors
 from pyrogram.types import (
-    InlineQueryHandler,
     InlineQuery,
     InlineQueryResultArticle,
     InputTextMessageContent,
@@ -49,10 +48,3 @@ async def search(client: Client, query: InlineQuery):
                 switch_pm_parameter="",
             )
 
-__handlers__ = [
-    [
-        InlineQueryHandler(
-            search
-        )
-    ]
-]
